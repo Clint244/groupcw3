@@ -1,0 +1,15 @@
+{
+    "name": "After school Lesson",
+    "short_name": "Afterschool",
+    "description": "After school lessons for students",
+    "icons": [
+        {
+            "src": "images/icon.png",
+            "sizes": "512/512",
+            "type" : "image/png"
+        }
+    ],
+    "start_url": "index.html",
+    "display": "fullscreen",
+    "background_color": "#B12A34"
+}

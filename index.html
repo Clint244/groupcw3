@@ -3,15 +3,14 @@
         <title>Group 3</title>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/vue"></script>
-        <link rel="manifest" href="group.webmanifest">
-        <!-- <link rel="component" href="lesson.html">
-        <link rel="component" href="cart.html"> -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="manifest" href="afterschool.webmanifest">
+        <link rel="component" href="lesson.html">
+        <link rel="component" href="cart.html">
 
         <script>
             if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('serviceworker.js');
+                navigator.serviceWorker.register('service-worker.js');
             };
         </script>
     </head>
@@ -37,6 +36,7 @@
                                 <p> Price: {{ product.price }}</p>
                                 <!-- This button would display when 'Add to cart is true'-->
                                 <button class="btn btn-secondary"v-on:click='addToCart' v-if='canAddToCart'> Add to Cart</button>
+                                
                                 <!-- This button will be disabled otherwise-->
                                 <button disabled ='disabled' v-else>Add to cart</button>
                             </div>
